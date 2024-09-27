@@ -174,10 +174,11 @@
 
       <div class="lg:w-[689px] lg:h-[208px]">
         <div class="flex justify-between">
-          <h1>Latest Property</h1>
+          <h1 class="font-semibold text-base">Latest Property</h1>
           <div class="flex gap-4">
-            <div
+            <button
               class="h-[25px] w-[25px] border-[0.75px] rounded-full flex justify-center items-center"
+              onclick="clickLeft()"
             >
               <svg
                 width="16"
@@ -193,9 +194,10 @@
                   fill="#121212"
                 />
               </svg>
-            </div>
-            <div
+            </button>
+            <button
               class="h-[25px] w-[25px] border-[0.75px] rounded-full flex justify-center items-center bg-black"
+              onclick="clickRight()"
             >
               <svg
                 width="16"
@@ -211,6 +213,51 @@
                   fill="white"
                 />
               </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mt-[20px]">
+          <div
+            class="flex gap-6 flex-nowrap overflow-x-auto pb-5"
+            id="flex-container"
+          >
+            <div class="card-carousel">
+              <img
+                width="130px"
+                height="112px"
+                class="rounded-xl"
+                src="../assets/images/card.png"
+                alt=""
+              />
+              <div>
+                <div class="flex gap-[2px]">
+                  <h1 class="font-semibold text-base text-primary">$2,900/</h1>
+                  <p class="font-normal text-xs">Month</p>
+                </div>
+                <h1 class="font-semibold text-base">Surabaya VOC House</h1>
+                <p class="text-neutral600 font-medium text-sm">
+                  Surabaya, Indonesia
+                </p>
+              </div>
+            </div>
+            <div class="card-carousel">
+              <img
+                width="130px"
+                height="112px"
+                class="rounded-xl"
+                src="../assets/images/card.png"
+                alt=""
+              />
+              <div>
+                <div class="flex gap-[2px]">
+                  <h1 class="font-semibold text-base text-primary">$2,900/</h1>
+                  <p class="font-normal text-xs">Month</p>
+                </div>
+                <h1 class="font-semibold text-base">Surabaya VOC House</h1>
+                <p class="text-neutral600 font-medium text-sm">
+                  Surabaya, Indonesia
+                </p>
+              </div>
             </div>
           </div>
         </div>

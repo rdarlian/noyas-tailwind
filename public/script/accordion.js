@@ -11,3 +11,21 @@ function toggle(id) {
     arrow.style.transform = "rotate(0deg)";
   }
 }
+
+function clickLeft() {
+  let container = document.querySelector("#flex-container");
+  container.scrollTo({
+    left: container.scrollLeft - 200,
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+function clickRight() {
+  let container = document.querySelector("#flex-container");
+  container.scrollTo({
+    left: container.scrollLeft + 200,
+    top: 0,
+    behavior: "smooth",
+  });
+}
